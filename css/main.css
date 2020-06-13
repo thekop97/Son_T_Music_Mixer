@@ -1,0 +1,21 @@
+html{
+    font-family: "algerian";
+    font-size: 16px;
+    background-image: url(../image/background.jpg);
+    background-size: cover;
+}
+
+.hidden{
+    display: none;
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+#reset:hover, #popup:hover{
+    cursor: pointer;
+}
