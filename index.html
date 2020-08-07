@@ -1,13 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/main.css">  
-	<title>Music Mixer</title>
+<meta charset="utf-8">
+<title>Music Mixer</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-  <h1>Processing</h1>
-<script src="js/main.js"></script>
+
+<body background="images/background2.jpg">
+<div id="siteContainer">
+<header id="mainHeader">
+
+	<h1 id="title">DJ Table</h1>
+
+	</header>
+
+<section id="about">
+	<h2 class="hidden">About the App</h2>
+	<p>Create your music</p>
+</section>
+
+
+
+<section id="mixer">
+
+	<div id="turnTable">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536.37 536.37"><defs><style>.cls-1{fill:#020202;}.cls-2{fill:none;stroke-width:3.6px;}.cls-2,.cls-3{stroke:#ff2626;stroke-miterlimit:10;}.cls-3{fill:#353535;stroke-width:8px;}</style></defs><title>Asset 3</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle id="record" class="cls-1" cx="268.19" cy="268.19" r="268.19"/><path id="lines" class="cls-2" d="M463.17,268.19c0,107.68-87.3,195-195,195s-195-87.3-195-195,87.3-195,195-195S463.17,160.5,463.17,268.19Zm-195-154.3c-88.1,0-159.51,69.78-159.51,155.86s71.41,155.87,159.51,155.87,159.5-69.78,159.5-155.87S356.28,113.89,268.19,113.89Zm-1-79.94C135.05,34,27.93,138.63,27.93,267.75s107.12,233.8,239.26,233.8,239.25-104.67,239.25-233.8S399.32,34,267.19,34Z"/><rect id="movment" class="cls-1" x="20.93" y="173.01" width="492.89" height="185.37"/><path id="middle" class="cls-3" d="M355.72,265.7a88.54,88.54,0,1,1-88.53-88.54A88.54,88.54,0,0,1,355.72,265.7ZM267.19,245a20.68,20.68,0,1,0,20.68,20.68A20.68,20.68,0,0,0,267.19,245Z"/></g></g>
+
+			<style type="text/css">
+
+						#movment{
+							position: absolute;
+  					  animation: rotation 3s linear infinite;
+							transform-origin: center;
+						}
+						@-webkit-keyframes rotation {
+		from {``
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+			</style>
+
+		</svg>
+
+	</div>
+
+	<section id="track-slot">
+			<div class="track-slot-drop-zone">
+				<div class="drop-zone tl"></div>
+				<div class="drop-zone tml"></div>
+				<div class="drop-zone tmr"></div>
+				<div class="drop-zone tr"></div>
+				<div class="drop-zone bl"></div>
+				<div class="drop-zone bmr"></div>
+				<div class="drop-zone bml"></div>
+				<div class="drop-zone br"></div>
+			</div>
+			<div id="button"><a href="index.html">Reset Tracks!</a></div>
+	</section>
+	<div id="turnTable2">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536.37 536.37"><defs><style>.cls-1{fill:#020202;}.cls-2{fill:none;stroke-width:3.6px;}.cls-2,.cls-3{stroke:#ff2626;stroke-miterlimit:10;}.cls-3{fill:#353535;stroke-width:8px;}</style></defs><title>Asset 3</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle id="record" class="cls-1" cx="268.19" cy="268.19" r="268.19"/><path id="lines" class="cls-2" d="M463.17,268.19c0,107.68-87.3,195-195,195s-195-87.3-195-195,87.3-195,195-195S463.17,160.5,463.17,268.19Zm-195-154.3c-88.1,0-159.51,69.78-159.51,155.86s71.41,155.87,159.51,155.87,159.5-69.78,159.5-155.87S356.28,113.89,268.19,113.89Zm-1-79.94C135.05,34,27.93,138.63,27.93,267.75s107.12,233.8,239.26,233.8,239.25-104.67,239.25-233.8S399.32,34,267.19,34Z"/><rect id="movment" class="cls-1" x="20.93" y="173.01" width="492.89" height="185.37"/><path id="middle" class="cls-3" d="M355.72,265.7a88.54,88.54,0,1,1-88.53-88.54A88.54,88.54,0,0,1,355.72,265.7ZM267.19,245a20.68,20.68,0,1,0,20.68,20.68A20.68,20.68,0,0,0,267.19,245Z"/></g></g>
+
+			<style type="text/css">
+
+						#movment{
+							position: absolute;
+  					  animation: rotation 3s linear infinite;
+							transform-origin: center;
+						}
+						@-webkit-keyframes rotation {
+		from {``
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+			</style>
+
+		</svg>
+
+	</div>
+
+</section>
+
+
+<section id="musicIcons">
+	<h2>Input Sounds</h2>
+</section>
+
+<section id="soundBoxs">
+<div class="key">
+	<img id="bass"  src="images/bass_icon.png" height="80px" width="80px" alt="sound icon">
+	<img id="drum" src="images/drum_icon.png" height="80px" width="80px" alt="sound icon">
+	<img id="kick" src="images/kick_icon.png" height="80px" width="80px" alt="sound icon">
+	<img id="piano" src="images/piano_icon.png" height="80px" width="80px" alt="sound icon">
+	<img id="impact" src="images/impact_icon.png" height="80px" width="80px" alt="sound icon">
+	<img id="loop" src="images/trumpet_icon.png" height="80px" width="80px" alt="sound icon">
+	<img id="riser" src="images/riser_icon.png" height="80px" width="80px" alt="sound icon">
+	<img id="synth" src="images/synth_icon.png" height="80px" width="80px" alt="sound icon">
+</div>
+
+</section>
+
+<audio data-id="bass" src="sounds/bass.wav"></audio>
+<audio data-id="drum" src="sounds/drum.wav"></audio>
+<audio data-id="kick" src="sounds/kick.wav"></audio>
+<audio data-id="piano" src="sounds/piano.wav"></audio>
+<audio data-id="impact" src="sounds/impact.wav"></audio>
+<audio data-id="loop" src="sounds/loop.wav"></audio>
+<audio data-id="riser" src="sounds/riser.wav"></audio>
+<audio data-id="synth" src="sounds/synth.wav"></audio>
+
+	<script src="js/main.js"></script>
 </body>
 </html>
